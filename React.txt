@@ -271,4 +271,28 @@ Different way of sending data using api
 1)body parameter
 2)path parameter
 3)Query Parameter
-        
+ 
+Demerits of state lifting
+------------------------
+Data loss due to prop drilling  
+
+-prop drilling occurs when the parent component generate its states and passes it down as props to its child components that does not consume the props instead they only passes it down to its child components
+
+Elongated props
+---------------
+props which are neither created nor consumed by a component
+
+Coupling
+---------
+interdependency of components
+
+Redux
+------
+-Third way of data sharing in react
+
+-its an external library to achieve data sharing in react 
+
+-Components of redux:
+1)store
+2)action
+3)reducer
